@@ -1,0 +1,135 @@
+ .calculator {
+    width: 280px;
+    margin: 100px auto;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: yellow;
+  
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: green;
+    color: maroon;
+}
+
+.equal{
+    grid-column: span 2;
+    color: red;
+}
+
+#display{
+    width: 230px;
+   min-height: 50px;
+   padding: 20px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   background-color: rgb(67, 38, 38);
+   color: white;
+   border-radius: 5px;
+   flex: 1 1 0%;
+   font-size: 1.5rem;
+   font-weight: 700;
+} 
+
+
+.operators{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+} 
+
+
+@media screen and (max-width: 200px){
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    .calculator {
+        width: 120px;
+        height: 125px;
+        margin: 10px auto;
+        border: 1px solid black;
+        padding: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: yellow;
+      
+    }
+    
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        margin-top: 3px;
+    }
+    
+    button {
+        padding: 1px;
+        font-size: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    button:hover {
+        background-color: green;
+        color: maroon;
+    }
+    
+    .equal{
+        grid-column: span 2;
+        color: red;
+    }
+    
+    #display{
+        width: 110px;
+       min-height: 30px;
+       padding: 5px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: flex-end;
+       background-color: rgb(67, 38, 38);
+       color: white;
+       border-radius: 2px;
+       flex: 1 1 0%;
+       font-size: 1rem;
+       
+    } 
+    
+    
+    .operators{
+        color: red;
+        font-size: 0.2rem;
+        font-weight: 5;
+    }
+
+
+
+
+}
+    
